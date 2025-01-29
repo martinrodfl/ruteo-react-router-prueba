@@ -18,7 +18,7 @@ export const LoginPage = () => {
 
   return (
     <div>
-      <h1>Iniciar Sesión</h1>
+      <h1 className="text-3xl font-bold underline">Login</h1>
       <form onSubmit={handleLogin}>
         <div>
           <label>Usuario:</label>
