@@ -8,9 +8,10 @@ export const LoginPage = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Simulamos un login exitoso
+    // Simulamos un login
     if (username && password) {
-      navigate("/dashboard"); // Redirigir al dashboard
+      localStorage.setItem("authToken", "userLoggedIn");
+      navigate("/dashboard");
     } else {
       alert("Por favor, ingresa tus credenciales.");
     }
