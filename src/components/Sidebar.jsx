@@ -10,10 +10,10 @@ export function Sidebar() {
       <div className="nav-section">
         <div className="nav-section-title">
           <p>Principal</p>
-          <span className="line"></span>{" "}
+          <span className="line"></span>
         </div>
         <NavLink
-          to="home"
+          to=""
           end
           className={({ isActive }) =>
             isActive ? "link active-link" : "inactive-link"
