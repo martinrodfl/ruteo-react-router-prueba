@@ -1,63 +1,92 @@
 nav {
-    color : #495057;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 100vh;
-    width: 200px;
-    position: fixed;
-    top: 0;
-    left: 0 ;
-    padding: 10px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  color: #495057;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #007bff65;
+  border-radius: 5px;
+  width: 100%;
+  height: 5vh;
+
+  & img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+  }
+
+  & span {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 }
 
 .nav-section-title {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .line {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    height: 1px;
-    background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.nav-section{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 50%;
-    width: 100%;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-    padding: 10px 0 10px 10px;
+.nav-section-wraper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
 }
 
-.link {
-    display: flex;
-    width: 100%;
+.nav-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: fit-content;
+  width: 100%;
+  /* border-bottom: 2px solid rgba(0, 0, 0, 0.1); */
+  padding: 10px;
+  gap: 5px;
 }
 
-.active-link, .active-link:hover {
-   
-    font-weight: bold;
-    color: #007bff;
-    background-color: rgb(39, 39, 39);
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .inactive-link {
-   
-    color: #0753a5; /* Gris para los enlaces inactivos */
-    text-decoration: none;
-  }
-  
-  .inactive-link:hover {
-    color: #000; /* Negro al pasar el mouse */
-  }
+.link,
+.active-link,
+.inactive-link,
+.active-link:hover {
+  display: flex;
+  width: 100%;
+}
+
+.active-link,
+.active-link:hover {
+  font-weight: bold;
+  color: #007bff;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: background-color 0.7s;
+}
+
+.inactive-link {
+  color: #007bff65;
+  text-decoration: none;
+}
+
+.inactive-link:hover {
+  color: #000;
+}

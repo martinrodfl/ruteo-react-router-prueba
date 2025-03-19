@@ -1,12 +1,20 @@
 import { Outlet } from "react-router";
 import { Sidebar } from "../components/Sidebar";
+import { Header } from "../components/Header";
+import "./Dashboard.css";
 
 export default function Dashboard() {
   return (
-    <div>
-      <h1>Dashboard Home</h1>
-      <Sidebar />
-      <Outlet />
+    <div className="dashboard-container">
+      <div className="sidebar-grid">
+        <Sidebar />
+      </div>
+      <div className="header-grid">
+        <Header />
+      </div>
+      <div className="main-content-grid">
+        <Outlet />
+      </div>
     </div>
   );
 }

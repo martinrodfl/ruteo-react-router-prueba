@@ -5,50 +5,88 @@ export function Sidebar() {
   return (
     <nav>
       <div className="nav-header">
-        <img></img> Logo
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+          alt="Logo"
+        />
+        <h2>Logo</h2>
       </div>
-      <div className="nav-section">
-        <div className="nav-section-title">
-          <p>Principal</p>
-          <span className="line"></span>
+      <div className="nav-section-wraper">
+        <div className="nav-section">
+          <div className="nav-section-title">
+            <p>Principal</p>
+            <span className="line"></span>
+          </div>
+          <NavLink
+            to=""
+            end
+            className={({ isActive }) =>
+              isActive ? "link active-link" : "inactive-link"
+            }
+          >
+            HOME
+          </NavLink>{" "}
+          <NavLink
+            to="blog"
+            className={({ isActive }) =>
+              isActive ? "link active-link" : "inactive-link"
+            }
+          >
+            BLOG
+          </NavLink>
+          <NavLink
+            to="contact"
+            className={({ isActive }) =>
+              isActive ? "link active-link" : "inactive-link"
+            }
+          >
+            CONTACT
+          </NavLink>
+          <NavLink
+            to="users"
+            className={({ isActive }) =>
+              isActive ? "link active-link" : "inactive-link"
+            }
+          >
+            USERS
+          </NavLink>
+          <NavLink
+            to="tasks"
+            className={({ isActive }) =>
+              isActive ? "link active-link" : "inactive-link"
+            }
+          >
+            TASKS
+          </NavLink>
         </div>
-        <NavLink
-          to=""
-          end
-          className={({ isActive }) =>
-            isActive ? "link active-link" : "inactive-link"
-          }
-        >
-          HOME
-        </NavLink>{" "}
-        <NavLink
-          to="blog"
-          className={({ isActive }) =>
-            isActive ? "link active-link" : "inactive-link"
-          }
-        >
-          BLOG
-        </NavLink>
-        <NavLink
-          to="contact"
-          className={({ isActive }) =>
-            isActive ? "link active-link" : "inactive-link"
-          }
-        >
-          CONTACT
-        </NavLink>
+        <div className="nav-section">
+          <div className="nav-section-title">
+            <p>Otra seccion</p>
+            <span className="line"></span>
+          </div>
+        </div>
       </div>
-      <div className="nav-items2">otros items</div>
-      <div className="nav-item">
-        <NavLink
-          to="/"
-          end
-          className={({ isActive }) =>
-            isActive ? "link active-link" : "inactive-link"
-          }
-        >
-          Login
-        </NavLink>
+      <div className="nav-section-footer">
+        <div className="nav-section">
+          <NavLink
+            to="settings"
+            end
+            className={({ isActive }) =>
+              isActive ? "link active-link" : "inactive-link"
+            }
+          >
+            Settings
+          </NavLink>
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) =>
+              isActive ? "link active-link" : "inactive-link"
+            }
+          >
+            Login
+          </NavLink>
+        </div>
       </div>
     </nav>
   );
