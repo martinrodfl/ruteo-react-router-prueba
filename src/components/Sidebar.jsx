@@ -9,12 +9,12 @@ export function Sidebar() {
           src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
           alt="Logo"
         />
-        <h2>MySuperDashboard</h2>
+        <p>SuperApp</p>
       </div>
       <div className="nav-section-wraper">
         <div className="nav-section">
           <div className="nav-section-title">
-            <p>Principal</p>
+            <p>Main</p>
             <span className="line"></span>
           </div>
           <NavLink
@@ -24,7 +24,7 @@ export function Sidebar() {
               isActive ? "link active-link" : "inactive-link"
             }
           >
-            HOME
+            <i className="bx bxs-home-alt-2"></i> HOME
           </NavLink>{" "}
           <NavLink
             to="blog"
@@ -32,7 +32,7 @@ export function Sidebar() {
               isActive ? "link active-link" : "inactive-link"
             }
           >
-            BLOG
+            <i className="bx bxs-notepad"></i>BLOG
           </NavLink>
           <NavLink
             to="contact"
@@ -40,7 +40,7 @@ export function Sidebar() {
               isActive ? "link active-link" : "inactive-link"
             }
           >
-            CONTACT
+            <i className="bx bxs-contact"></i> CONTACT
           </NavLink>
           <NavLink
             to="users"
@@ -48,7 +48,7 @@ export function Sidebar() {
               isActive ? "link active-link" : "inactive-link"
             }
           >
-            USERS
+            <i className="bx bxs-user"></i> USERS
           </NavLink>
           <NavLink
             to="tasks"
@@ -56,18 +56,22 @@ export function Sidebar() {
               isActive ? "link active-link" : "inactive-link"
             }
           >
-            TASKS
+            <i className="bx bxs-spreadsheet"></i> TASKS
           </NavLink>
         </div>
         <div className="nav-section">
           <div className="nav-section-title">
-            <p>Otra seccion</p>
+            <p>Another section</p>
             <span className="line"></span>
           </div>
         </div>
       </div>
       <div className="nav-section-footer">
         <div className="nav-section">
+          <div className="nav-section-title">
+            <p>Principal</p>
+            <span className="line"></span>
+          </div>
           <NavLink
             to="settings"
             end
@@ -75,7 +79,7 @@ export function Sidebar() {
               isActive ? "link active-link" : "inactive-link"
             }
           >
-            Settings
+            <i className="bx bxs-cog"></i> Settings
           </NavLink>
           <NavLink
             to="/"
@@ -84,7 +88,7 @@ export function Sidebar() {
               isActive ? "link active-link" : "inactive-link"
             }
           >
-            Logout
+            <i className="bx bxs-log-out"></i> Logout
           </NavLink>
         </div>
       </div>

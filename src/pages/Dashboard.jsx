@@ -5,8 +5,8 @@ import "./Dashboard.css";
 
 export default function Dashboard() {
   return (
-    <div className="dashboard-container">
-      <div className="sidebar-grid">
+    <div className="dashboard-container hideSidebar">
+      <div className="sidebar-grid ">
         <Sidebar />
       </div>
       <div className="header-grid">

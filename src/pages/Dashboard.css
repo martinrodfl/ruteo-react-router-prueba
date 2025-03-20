@@ -35,6 +35,13 @@
   /* border: 1px solid violet; */
 }
 
+.hideSidebar {
+  grid-template-areas:
+    "header"
+    "main";
+  grid-template-columns: 100vw;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .dashboard-container {
