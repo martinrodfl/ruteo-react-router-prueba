@@ -13,8 +13,6 @@
 .sidebar-grid {
   grid-area: sidebar;
   height: 100vh;
-  /* position: sticky; */
-  /* top: 0; */
   padding: 8px;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   /* border: 1px solid greenyellow; */
@@ -33,7 +31,6 @@
 .main-content-grid {
   grid-area: main;
   display: flex;
-  /* height: 100%; */
   height: calc(100vh - 60px);
   /* border: 1px solid violet; */
 }

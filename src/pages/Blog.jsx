@@ -1,13 +1,8 @@
+import "./PageBase.css";
+
 export const Blog = () => {
   return (
-    <div
-      style={{
-        backgroundColor: "white",
-        display: "flex",
-        width: "100%",
-        height: "100%",
-      }}
-    >
+    <div className="page-base">
       <h1>Blog</h1>
     </div>
   );

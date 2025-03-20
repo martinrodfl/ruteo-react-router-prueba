@@ -1,13 +1,8 @@
+import "./PageBase.css";
+
 export const Tasks = () => {
   return (
-    <div
-      style={{
-        backgroundColor: "orange",
-        display: "flex",
-        width: "100%",
-        height: "100%",
-      }}
-    >
+    <div className="page-base">
       <h1>Tasks</h1>
     </div>
   );

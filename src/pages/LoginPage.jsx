@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import "./LoginPage.css";
 
 export const LoginPage = () => {
   const [username, setUsername] = useState("");
@@ -18,9 +19,9 @@ export const LoginPage = () => {
   };
 
   return (
-    <div>
+    <div className="login-page">
       <h1 className="text-3xl font-bold underline">Login</h1>
-      <form onSubmit={handleLogin}>
+      <form onSubmit={handleLogin} className="login-form">
         <div>
           <label>Usuario:</label>
           <input
@@ -37,7 +38,9 @@ export const LoginPage = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type="submit">submit</button>
+        <button type="submit" className="login-button">
+          Submit
+        </button>
       </form>
     </div>
   );

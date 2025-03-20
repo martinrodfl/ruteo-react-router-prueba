@@ -1,13 +1,8 @@
+import "./PageBase.css";
+
 export const Settings = () => {
   return (
-    <div
-      style={{
-        backgroundColor: "black",
-        display: "flex",
-        width: "100%",
-        height: "100%",
-      }}
-    >
+    <div className="page-base">
       <h1>Settings</h1>
     </div>
   );

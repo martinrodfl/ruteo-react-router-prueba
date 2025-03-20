@@ -1,13 +1,8 @@
+import "./PageBase.css";
+
 export const Contact = () => {
   return (
-    <div
-      style={{
-        backgroundColor: "red",
-        display: "flex",
-        width: "100%",
-        height: "100%",
-      }}
-    >
+    <div className="page-base">
       <h1>Contact</h1>
     </div>
   );

@@ -9,7 +9,7 @@ export function Sidebar() {
           src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
           alt="Logo"
         />
-        <h2>Logo</h2>
+        <h2>MySuperDashboard</h2>
       </div>
       <div className="nav-section-wraper">
         <div className="nav-section">
@@ -84,7 +84,7 @@ export function Sidebar() {
               isActive ? "link active-link" : "inactive-link"
             }
           >
-            Login
+            Logout
           </NavLink>
         </div>
       </div>
