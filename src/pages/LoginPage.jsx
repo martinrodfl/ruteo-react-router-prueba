@@ -22,7 +22,7 @@ export const LoginPage = () => {
     <div className="login-page">
       <h1 className="text-3xl font-bold underline">Login</h1>
       <form onSubmit={handleLogin} className="login-form">
-        <div>
+        <div className="input-item">
           <label>Usuario:</label>
           <input
             type="text"
@@ -30,7 +30,7 @@ export const LoginPage = () => {
             onChange={(e) => setUsername(e.target.value)}
           />
         </div>
-        <div>
+        <div className="input-item">
           <label>Contraseña:</label>
           <input
             type="password"

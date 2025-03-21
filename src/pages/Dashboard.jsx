@@ -5,15 +5,19 @@ import "./Dashboard.css";
 
 export default function Dashboard() {
   return (
-    <div className="dashboard-container hideSidebar">
-      <div className="sidebar-grid ">
+    <div className="dashboard-container">
+      <div className="sidebar-container">
         <Sidebar />
       </div>
-      <div className="header-grid">
-        <Header />
-      </div>
-      <div className="main-content-grid">
-        <Outlet />
+      <div className="contentent-separator">
+        <div className="content">
+          <div className="header-container">
+            <Header />
+          </div>
+          <div className="main">
+            <Outlet />
+          </div>
+        </div>
       </div>
     </div>
   );

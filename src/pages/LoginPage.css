@@ -10,27 +10,40 @@
 .login-form {
   display: flex;
   flex-direction: column;
+  width: 30rem;
   gap: 1rem;
+  /* border: 1px solid #9c9c9c65; */
+  padding: 5px;
+
 
   & label {
     font-size: 1.5rem;
   }
+
   & input {
-    box-shadow: 0 1px 1px #007bff65;
+    display: flex;
+    border-bottom: 1px solid #9c9c9c65;
     margin-left: 5px;
+    width: 100%;
   }
+}
+
+.input-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .login-button {
   width: 100%;
   padding: 0.5rem;
   border-radius: 5px;
-  /* border: 0.5px solid #007bff65; */
-  box-shadow: 0 2px 3px #007bff65;
+  border: 1px solid #9c9c9c65;
   cursor: pointer;
 }
 
 .login-button:hover {
-  background-color: #007bff65;
+  border: 1px solid #9c9c9c65;
+  background-color: #9c9c9c65;
   color: white;
 }

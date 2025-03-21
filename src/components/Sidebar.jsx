@@ -3,15 +3,15 @@ import "./Sidebar.css";
 
 export function Sidebar() {
   return (
-    <nav>
-      <div className="nav-header">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-          alt="Logo"
-        />
-        <p>SuperApp</p>
-      </div>
+    <nav className="sidebar">
       <div className="nav-section-wraper">
+        <div className="nav-header">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+            alt="Logo"
+          />
+          <p>SuperDash</p>
+        </div>
         <div className="nav-section">
           <div className="nav-section-title">
             <p>Main</p>
@@ -65,31 +65,31 @@ export function Sidebar() {
             <span className="line"></span>
           </div>
         </div>
-      </div>
-      <div className="nav-section-footer">
-        <div className="nav-section">
-          <div className="nav-section-title">
-            <p>Principal</p>
-            <span className="line"></span>
+        <div className="nav-section-wraper">
+          <div className="nav-section">
+            <div className="nav-section-title">
+              <p>Principal</p>
+              <span className="line"></span>
+            </div>
+            <NavLink
+              to="settings"
+              end
+              className={({ isActive }) =>
+                isActive ? "link active-link" : "inactive-link"
+              }
+            >
+              <i className="bx bxs-cog"></i> Settings
+            </NavLink>
+            <NavLink
+              to="/"
+              end
+              className={({ isActive }) =>
+                isActive ? "link active-link" : "inactive-link"
+              }
+            >
+              <i className="bx bxs-log-out"></i> Logout
+            </NavLink>
           </div>
-          <NavLink
-            to="settings"
-            end
-            className={({ isActive }) =>
-              isActive ? "link active-link" : "inactive-link"
-            }
-          >
-            <i className="bx bxs-cog"></i> Settings
-          </NavLink>
-          <NavLink
-            to="/"
-            end
-            className={({ isActive }) =>
-              isActive ? "link active-link" : "inactive-link"
-            }
-          >
-            <i className="bx bxs-log-out"></i> Logout
-          </NavLink>
         </div>
       </div>
     </nav>

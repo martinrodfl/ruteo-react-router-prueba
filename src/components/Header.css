@@ -1,23 +1,19 @@
 .header {
-  grid-area: header;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 0 20px 0 5px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   width: 100%;
   height: 100%;
-  position: sticky;
-  top: 0;
-  z-index: 10;
   border-radius: 5px;
   gap: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0 20px 0 5px;
 }
 
 /*icono dashboard*/
-.bxs-dashboard {
+.bxs-dock-left {
   font-size: 1.5rem;
-  color: #007bffb4;
   line-height: 3;
   cursor: pointer;
+  padding-top: 3px;
 }

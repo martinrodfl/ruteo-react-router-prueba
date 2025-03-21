@@ -8,13 +8,22 @@ export const Header = () => {
   const location = useLocation();
   const pathParts = location.pathname.split("/");
   const lastPart = pathParts[pathParts.length - 1];
+
+  const handleSidebar = () => {
+
+    console.log('clicked');
+
+
+  }
+
   return (
     <div className="header">
       <div>
-        <i className="bx bxs-dashboard"></i>
+        <i className='bx bxs-dock-left' onClick={handleSidebar}></i>
       </div>
+      {'|'}
       <div>
-        Dashboard {">"}{" "}
+        Dashboard{" "}{">"}{" "}
         {lastPart === "dashboard" ? "Home" : capitalize(lastPart)}
       </div>
     </div>

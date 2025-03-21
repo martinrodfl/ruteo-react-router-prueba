@@ -1,66 +1,69 @@
 .dashboard-container {
-  display: grid;
-  grid-template-areas:
-    "sidebar header"
-    "sidebar main";
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: 60px 1fr;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
   height: 100vh;
-  width: 100%;
+  padding: 8px;
   /* border: 1px solid red; */
 }
 
-.sidebar-grid {
-  grid-area: sidebar;
-  height: 100vh;
-  padding: 8px;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
+.contentent-separator {
+  display: flex;
+  justify-content: flex-end;
+  width: 88%;
+  height: 100%;
+  /* border: 1px solid green; */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 375px;
+  height: 100%;
+  border-radius: 15px;
+  background-color: rgb(226, 226, 226);
+  color: black;
+  /* border: 1px solid violet; */
+}
+
+.sidebar-container {
+  display: flex;
+  padding-top: 20px;
+  /* width: 100%; */
+  /* border-right: 1px solid rgba(0, 0, 0, 0.1); */
   /* border: 1px solid greenyellow; */
 }
 
-.header-grid {
-  grid-area: header;
+.header-container {
   display: flex;
   align-items: center;
-  top: 0;
-  z-index: 10;
+  /* top: 0;
+  z-index: 10; */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   /* border: 1px solid blue; */
 }
 
-.main-content-grid {
-  grid-area: main;
-  display: flex;
-  height: calc(100vh - 60px);
-  /* border: 1px solid violet; */
-}
-
-.hideSidebar {
-  grid-template-areas:
-    "header"
-    "main";
-  grid-template-columns: 100vw;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
+
   .dashboard-container {
-    grid-template-areas:
-      "header"
-      "main";
-    grid-template-columns: 1fr;
+
+    padding: 0px;
   }
 
-  .sidebar-grid {
-    position: fixed;
-    left: -250px;
-    top: 0;
-    height: 100vh;
-    transition: left 0.3s ease;
-    z-index: 5;
+  .sidebar-container {
+    display: none;
   }
 
-  .sidebar-grid.active {
-    left: 0;
+  .contentent-separator {
+    width: 100%;
   }
+
+  .content {
+    width: 100vw;
+    height: 100dvh;
+  }
+
 }
