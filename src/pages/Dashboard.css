@@ -1,65 +1,88 @@
-.dashboard-container {
+.dashboard-container-principal {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100vw;
   height: 100vh;
-  padding: 8px;
-  /* border: 1px solid red; */
-}
-
-.contentent-separator {
-  display: flex;
-  justify-content: flex-end;
-  width: 88%;
-  height: 100%;
-  /* border: 1px solid green; */
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
   min-width: 375px;
-  height: 100%;
-  border-radius: 15px;
-  background-color: rgb(226, 226, 226);
-  color: black;
-  /* border: 1px solid violet; */
+  /* border: 1px solid red; */
+
 }
 
 .sidebar-container {
   display: flex;
-  padding-top: 20px;
-  /* width: 100%; */
-  /* border-right: 1px solid rgba(0, 0, 0, 0.1); */
-  /* border: 1px solid greenyellow; */
+
+  /* width: 375px; */
+  /* border: 1px solid red; */
 }
 
-.header-container {
+.contentent-separator {
+  padding: 8px;
   display: flex;
-  align-items: center;
-  /* top: 0;
-  z-index: 10; */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  /* border: 1px solid blue; */
+  justify-content: flex-end;
+  width: 100vw;
+  height: 100%;
+  transition: all 1.5s linear;
+
+  & .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 375px;
+    height: 100%;
+    border-radius: 15px;
+    background-color: rgb(226, 226, 226);
+    color: black;
+    /* border: 1px solid red; */
+
+    & .header-container {
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      /* border: 1px solid red; */
+    }
+  }
 }
+
+.hide {
+  display: none;
+}
+
+.above {
+  z-index: 1;
+  /* transition: all 0.5s linear; */
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
 
-  .dashboard-container {
-
+  .dashboard-container-principal {
     padding: 0px;
   }
 
   .sidebar-container {
-    display: none;
+    z-index: 0;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    height: 100vh;
+
   }
 
   .contentent-separator {
-    width: 100%;
+    position: absolute;
+    z-index: 0;
+    padding: 0;
   }
+
+  /* .active {
+    position: absolute;
+    z-index: 120;
+    top: 0;
+    width: 20vw;
+  } */
+
 
   .content {
     width: 100vw;

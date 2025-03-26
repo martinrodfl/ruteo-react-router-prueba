@@ -4,8 +4,9 @@ import { Header } from "../components/Header";
 import "./Dashboard.css";
 
 export default function Dashboard() {
+
   return (
-    <div className="dashboard-container">
+    <div className="dashboard-container-principal">
       <div className="sidebar-container">
         <Sidebar />
       </div>
