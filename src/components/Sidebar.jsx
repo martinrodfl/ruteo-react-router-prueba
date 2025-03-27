@@ -21,7 +21,7 @@ export function Sidebar() {
             src='https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg'
             alt='Logo'
           />
-          <p>SuperDash</p>
+          <p>Gym Admin</p>
         </div>
 
         <i className='bx bx-x sidebar-close-button' onClick={closeSidebar}></i>

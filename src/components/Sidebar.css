@@ -8,7 +8,7 @@
   /* width: 375px; */
   /* border: 1px solid #666b70; */
   background-color: #131313;
-  transition: all 9.5s ease;
+  transition: width .8s linear;
 
   & .nav-header {
     display: flex;
@@ -102,16 +102,16 @@
         align-items: center;
         padding-left: 5px;
         height: 35px;
-        border: 2px solid transparent;
+        border: 3px solid transparent;
         /* border: 1px solid #666b70; */
       }
 
       & .active-link,
       .active-link:hover {
-        color: #cbcbcb;
+        color: #ffffff;
         background-color: #3d4b5588;
-        border-left: 2px solid #007bffb4;
-        border-radius: 5px;
+        border-left: 3px solid #007bffb4;
+        border-radius: 0px 5px 5px 0px;
         transition: border-bottom 0.7s;
       }
 
